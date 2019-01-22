@@ -1,4 +1,4 @@
-# A Docker Cheat Sheet
+# Docker Cheat Sheet
 
 ## Purging All Unused or Dangling Images, Containers, Volumes, and Networks
 
