@@ -19,13 +19,18 @@ For a Java project using Gradle 3.4+, then it depends on whether you are build a
 
 ### List all tasks
 
-$ ./gradlew tasks --all
+```$ ./gradlew tasks --all```
 
 ### List tasks from the master project
 
-$ ./gradlew -q :tasks --all
+```$ ./gradlew -q :tasks --all```
+
+### Check Task Dependencies With a Dry Run
+
+```$ gradle -m build```
 
 ---
 resources
 
-https://docs.gradle.org/current/userguide/java_library_plugin.html
+* https://docs.gradle.org/current/userguide/java_library_plugin.html
+* http://mrhaki.blogspot.com/2014/11/gradle-goodness-check-task-dependencies.html
