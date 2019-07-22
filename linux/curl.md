@@ -72,7 +72,7 @@ For sending data with POST and PUT requests, these are common curl options:
     - curl --write-out '%{http_code}' --silent --output /dev/null http://localhost
 
 
-## Advance usage
+## Advanced usage
 
 Display total time, in seconds, that the full operation lasted:
 `curl -o /dev/null -s -w 'Total: %{time_total}\n'  https://localhost`
