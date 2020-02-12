@@ -1,4 +1,4 @@
-### Bash
+# Bash
 
 ## Arrays
 
@@ -36,4 +36,18 @@ IFS=';' read -ra my_array <<< "$my_string"
   do
     echo $i 
   done
+```
+
+### Use as function argument
+
+To pass one or more arguments AND an array, the array should be the last argument and only one array can be passed.
+
+```bash
+function func() {
+   local at1="$1"   # Save first argument in a variable
+   shift            # Shift all arguments to the left (original $1 gets lost)
+   local arr=("$@") # Rebuild the array with rest of arguments
+   
+   #...
+}
 ```
